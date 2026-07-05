@@ -1,4 +1,4 @@
-import { serve } from "https://deno.land/std@0.224.0/http/server.ts";
+import { serve } from "https://deno.land/std/http/server.ts";
 
 async function handler(req: Request): Promise<Response> {
   const incomingUrl = new URL(req.url);
