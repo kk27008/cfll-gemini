@@ -75,4 +75,4 @@ async function handler(req: Request): Promise<Response> {
 
 console.log("This address is used to help astrbot connect to the Gemini API faster");
 // Start the server on port 8000 (local) or Deno Deploy's assigned port
-serve(handler);
+serve(handler, { port: 8000, hostname: "0.0.0.0" });
